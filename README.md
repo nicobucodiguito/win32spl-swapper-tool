@@ -1,7 +1,6 @@
 # Win32Spl.dll swapper for the Shared Printers not working problem
 
 ## Info
----
 
 
 Simple utility written in PowerShell to "solve" the problem of network shared printers not working or not connecting in Windows 10.
@@ -16,7 +15,6 @@ It is meant as an **extreme** solution since reverting this .dll could make your
   **Remember: You can always check the scripts by yourself to see what they do.**  
 
 ## How to use
----
 
 - **(Optional)** First execute **Allow_PowerShell_Scripts.bat** as an Adminstrator. This first script allows the system to run PowerShell scripts without all security warnings that stop scripts from running. The script is super simple, and is not _really_ necessary, you _could_ open your PowerShell and do the same with the **Set-ExecutionPolicy** to modify this manually, but this is made more for personal usage since I don't really want to do this manually every time and achieves the exact same thing as modifying it by hand.
 
@@ -30,14 +28,13 @@ Once the script is done, the printer service should be up and running again and 
 **By default the script doesn't delete the "old" win32spl.dll.**
 
 ## Additional information regarding security
----
 
 - If able to, **check the script by yourself, don't trust random scripts in the internet.** 
 
 - If you **don't** trust the win32spl.dll that is included in here, _that's totally okay and it is a good security practice_, you can always replace the one I included with one you trust or know that works.  As long as it is named "win32spl.dll" the script should work as intended.
 
-## Some articles about this issue 
----
+## Some articles about this issue
+
 - [Fix network printing or keep Windows secure? | TheRegister](https://www.theregister.com/2021/09/21/microsoft_printnightmare/)  
 - [The Windows Print nightmare continues for the enterprise | ComputerWorld](https://www.computerworld.com/article/3630629/windows-print-nightmare-continues-enterprise.html)
 - [New Windows 10 KB5006670 update breaks network printing | BleepingCoputer](https://www.bleepingcomputer.com/news/microsoft/new-windows-10-kb5006670-update-breaks-network-printing/)
